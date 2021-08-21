@@ -95,11 +95,11 @@ public class Main {
 
 Java8의 함수형 프로그래밍을 사용하다보면 자연스럽게 다양한 입출력을 갖는 함수형 인터페이스가 필요로 하고, 이를 매번 개발자가 구현하기는 힘든 일이다. 그래서 Java8은 일반적인 여러 타입의 입출력에 대하여 Generic을 이용하여  미리 만들어둔 Functional Interface들을 제공한다.
 
-### Java8이 제공하는 기본 Functional Interface들
+### Java8이 제공하는 기본 FunctionalInterface 들
 | Interface name | abstract method name | parameter type | return type |
 | ---- | ---- | ---- | ---- |
 | Runnable | run() | void | void |
-| Supplier<T> | get() | void | T |
-| Consumer<T> | accept(T) | T | void |
-| Function<T, R> | apply(T) | T | R |
-| Predicate<T> | test(T) | T | boolean |
+| Supplier\<T\> | get() | void | T |
+| Consumer\<T\> | accept(T) | T | void |
+| Function\<T, R\> | apply(T) | T | R |
+| Predicate\<T\> | test(T) | T | boolean |
