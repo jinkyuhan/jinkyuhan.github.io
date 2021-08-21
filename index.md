@@ -2,7 +2,7 @@
 안녕하세요? 방문하신 모든 분들 반갑습니다. 이곳은 오늘보다 더 나은 내일의 나를 위해, 귀찮더라도 한 자씩 고민하며 정리한 지식의 기록들을 보관한 곳입니다.
 
 ## 제가 이해한 바로는
-- [JS와 Java8의 클로저 지원 비교](https://jinkyuhan.github.io/asiunderstand/JS와_Java8의_클로저_지원_비교)
+- [JS와 Java8의 클로저 지원 비교](./asiunderstand/JS와_Java8의_클로저_지원_비교.html)
 
 ## 프로젝트 기록
 - [Fakebook](https://jinkyuhan.github.io/projects/Fakebook)
