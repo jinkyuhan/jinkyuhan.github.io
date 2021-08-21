@@ -11,8 +11,7 @@
 - [Java8의 람다, 함수형 인터페이스](./posting/Java8의_람다_함수형인터페이스)
 
 ## 프로젝트 기록
-- [Fakebook](https://jinkyuhan.github.io/projects/Fakebook)
-- 
+- [Fakebook](https://jinkyuhan.github.io/projects/Fakebook_index)
 
 
 
