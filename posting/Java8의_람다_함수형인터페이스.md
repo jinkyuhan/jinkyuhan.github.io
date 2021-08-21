@@ -1,6 +1,7 @@
-# Java8의 람다, 함수형 인터페이스
+<h1 style="text-align: center; ">Java8의 람다, 함수형 인터페이스</h1>
+<p style="text-align: right;"> updated 2020.08 </p>
 
-- 요약
+- 들어가기전 네줄 요약
     - Java8에서는 함수형 프로그래밍을 지원하기 위해 함수를 값처럼 다룰수 있어야 했다.
     - 이를 위해 함수를 인터페이스로 감싸서 다루는 방법으로 우회했고, 이를 함수형 인터페이스라고 하기로 했다.
     - Java8의 람다식은 사실 함수형 인터페이스의 익명 객체의 생성자 호출을 보기좋게 표현한 것일 뿐이다
@@ -110,3 +111,6 @@ Generic을 이용하여 미리 만들어둔 Functional Interface들을 제공한
 | Consumer\<T\> | accept(T) | T | void |
 | Function\<T, R\> | apply(T) | T | R |
 | Predicate\<T\> | test(T) | T | boolean |
+
+
+updated 2021. 08

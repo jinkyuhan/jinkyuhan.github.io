@@ -1,4 +1,5 @@
-# JS와 Java8의 클로저 지원 비교
+<h1 style="text-align: center; ">JS와 Java8의 클로저 지원 비교</h1>
+<p style="text-align: right;"> updated 2020.08 </p>
 
 ## 💡 클로저란?
 

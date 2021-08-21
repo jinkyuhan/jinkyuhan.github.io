@@ -119,10 +119,13 @@ kbd {
 }
 
 header {
-  width:270px;
+  width:260px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
+}
+header > img {
+  border-radius: 50%;
 }
 
 ul.downloads {
@@ -186,7 +189,7 @@ strong {
 }
 
 section {
-  width:500px;
+  width:540px;
   float:right;
   padding-bottom:50px;
 }
