@@ -1,8 +1,13 @@
 ## 소갯말
-안녕하세요? 방문하신 모든 분들 반갑습니다. 이곳은 오늘보다 더 나은 내일의 나를 위해, 귀찮더라도 한 자씩 고민하며 정리한 지식의 기록들을 보관한 곳입니다.
+방문하신 모든 분들 반갑습니다. 
+
+이곳은 오늘보다 더 나은 내일의 나를 위해, 귀찮더라도 한 자씩 고민하며 정리한 지식의 기록들을 보관한 곳입니다.
+
+제가 했던 공부와 경험가 여러분과 저 모두에게 도움이 되면 좋겠습니다. 
 
 ## 제가 이해한 바로는
 - [JS와 Java8의 클로저 지원 비교](./asiunderstand/JS와_Java8의_클로저_지원_비교.html)
+- [Node.js 기반 서버의 RaceHazard](./asiunderstand/Nodejs_기반_서버의_RaceHazard.md)
 
 ## 프로젝트 기록
 - [Fakebook](https://jinkyuhan.github.io/projects/Fakebook)
