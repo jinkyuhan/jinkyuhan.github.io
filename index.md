@@ -8,6 +8,7 @@
 ## 제가 이해한 바로는
 - [JS와 Java8의 클로저 지원 비교](./asiunderstand/JS와_Java8의_클로저_지원_비교.html)
 - [Node.js 기반 서버의 RaceHazard](./asiunderstand/Nodejs_기반_서버의_RaceHazard.md)
+- [Java8의 람다, 함수형 인터페이스](./asiunderstand/Java8의_람다_함수형인터페이스.html)
 
 ## 프로젝트 기록
 - [Fakebook](https://jinkyuhan.github.io/projects/Fakebook)
