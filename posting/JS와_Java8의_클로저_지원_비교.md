@@ -15,7 +15,7 @@
 
   자바스크립트에서는 모든 함수가 클로저이다. 즉, 모든 함수는 자기자신이 선언된 lexical environment를 저장한다. 아래는 **Javascript** 에서 보여지는 클로저의 예시이다.
 
-```jsx
+```javascript
 function functionMaker() {
 	// F를 선언하는 스코프 S
 	let count = 0;
@@ -91,7 +91,7 @@ public class lamdaClosure {
 			// lambda A
 			count++; // lambda A 안에서 count는 final임으로 수정 불가, compile time error!
 			System.out.println(num);
-		})		
+		});
 	}
 
 }

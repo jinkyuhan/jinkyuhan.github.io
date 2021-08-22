@@ -1,4 +1,5 @@
-# Node.js 기반 서버의 Race hazard
+<h1 style="text-align: center; ">Node.js 기반 서버의 Race hazard</h1>
+<p style="text-align: right;"> updated 2020.08 </p>
 
 ## Node.js는 싱글스레드다?
 
