@@ -1,4 +1,4 @@
-<h1 style="text-align: center; ">springsecurity의 authentication</h1>
+<h1 style="text-align: center; ">SpringSecurity의 Authentication</h1>
 <p style="text-align: right;"> updated 2020.08 </p>
 
 [comment]: <> (Spring Security를 제대로 사용하기 위해서는 Spring Security가 기본적으로 제공하는 Authentication logic에 대해 이해할 필요가 있습니다.<br>)
