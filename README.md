@@ -2,5 +2,4 @@
 
 blog: https://jinkyuhan.github.io
 
-
 theme: https://github.com/pages-themes/minimal
