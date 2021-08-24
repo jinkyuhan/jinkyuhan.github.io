@@ -15,7 +15,7 @@
 JWT, AccessToken, RefreshToken 등에 대한 개념은 이미 잘 알고있었지만, Spring 프레임워크의 방법으로 인증 전략을 적용하기 위해서는 **Spring Security에 대한 이해를 모르고는
 접근하기가 힘들었다**.
 
-# 그래도 인증 구현이 거기서 거기지...응?
+# 내가 하고있었던 오해들, 겪은 문제들
 
 --- 
 
@@ -33,7 +33,7 @@ Filter를 통과하는 것을 알고있었다.<br>
 - 특정한 URL(회원가입, 중복확인, 로그인 등)에 대해서는 JwtAuthenticationFilter 를 통과하지 않도록 해야함<br>
   &nbsp;&nbsp;→ 특정한 필터에 대해서만 pass하도록 하는 설정 인터페이스를 찾을 수 없었음, HttpSecurity에 permitAll을 해줬는데도 불구하고 필터에 자꾸 걸림.
 
-  결국엔 기존에 있던 지식과 동치되는 것들을 Spring 에서 찾는 것을 포기하고 Spring Security의 로직을 이해하기 위해서 레퍼런스를 찾고 디버깅을 하며 점차 감을 잡아갔다.
+결국엔 기존에 있던 지식과 동치되는 것들을 Spring 에서 찾는 것을 포기하고 Spring Security의 로직을 이해하기 위해서 레퍼런스를 찾고 디버깅을 하며 점차 감을 잡아갔다.
 
 # Spring Security에 대해 오해하고 있었던 것
 
@@ -163,6 +163,14 @@ JWT토큰을 재발급받는 컨트롤러를 추가 했다.<br>
 &nbsp;AccessToken만을 사용한다면 클라이언트 측에서 AccessToken을 폐기하는 것만으로 로그아웃이 될테지만, 나는 RefreshToken과 대응되는 loginSessionId를 관리하고 있으므로,
 RefreshToken으로 요청을 받아서 DB에서 해당 loginSessionId를 지워줘야만 서버에서도 사용자의 로그인이 종료된 것으로 처리 할 수 있다.
 
+<br>
+
+
+# 마치며
+
+---
+
+&nbsp;이번 프로젝트에 JWT인증을 적용하면서 얻게된 바는 Spring Security가 어떤식으로 동작하는지 깊게 공부할 기회가 됬다는 것이다. 가장 익숙하고 많이 해본 인증 방식이라서 일단은 JWT로 구현했지만, 이후에 Oauth 2.0을 Spring Seucurity에 연동하는 것도 도전해볼 생각이다.
 
 
    
