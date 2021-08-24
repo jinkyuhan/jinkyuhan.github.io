@@ -87,11 +87,11 @@ localObject들은 마치 전역변수 처럼 매 함수 실행 시 마다 공유
 것이다.<br>
 
 &nbsp; JVM에서 객체는 Heap영역에 생성된다. 하지만 메소드가 실행되면서 선언된 람다 밖의 변수는 Stack 영역에 생성된다.<br>
-따라서 만약 Heap에 람다표현식으로 생성된 객체가 사라지기 전에 지역변수가 속한 해당 Stack 영역이 Pop된다면, 람다 표현식 내부에서 값을 변경하려고 할때 해당 변수가 메모리에 살아있지 않음으로
-NullPointerException을 피할 수 없다.<br>
+따라서 만약 람다표현식으로 생성된 객체가 Heap에 사라지기 전에 지역변수가 속한 해당 Stack 영역이 Pop된다면, **람다 표현식 내부에서 값을 변경하려고 할때 해당 변수가 메모리에 살아있지 않음으로
+NullPointerException을 피할 수 없다.**<br>
 
-&nbsp; 결론적으로 Java8은 클로저를 읽기에 한해서만 부분적으로 지원한다. 람다표현식 안에서 외부 lexical environment의 변수에 쓰기를 시도하면 해당 변수는 final로 선언 되었다고 경고문구가
-뜬다. 이를 봤을때, 람다표현식으로 새로운 함수형 객체를 생성할 때, lexical environment의 변수를 final로 복사하여 함수형 인터페이스의 요소로 저장함을 알 수 잇다. 즉, 메소드 안에서 사용된
+&nbsp; 그래서 **Java8은 클로저를 읽기에 한해서만 부분적으로 지원한다.** 람다표현식 안에서 외부 lexical environment의 변수에 쓰기를 시도하면 해당 변수는 final로 선언 되었다고 경고문구가
+뜬다. 이를 봤을때, 람다표현식으로 새로운 함수형 객체를 생성할 때, **lexical environment의 변수를 final로 복사하여 함수형 인터페이스의 요소로 저장함을 알 수 있다.** 즉, 메소드 안에서 사용된
 람다표현식에서 Lexical environment의 변수에 접근할 때는, 읽기가능한 복사본만을 갖기 때문에, 읽기에 한해서만 접근이 가능하다.
 
 ```java
@@ -102,10 +102,9 @@ public class lamdaClosure {
         int count = 0;
         Arrays.stream(nums).forEach((num) -> {
             // lambda A
-            count++; // lambda A 안에서 count는 final임으로 수정 불가, compile time error!
+            count++; // lambda A 안에서 count는 final임으로 수정 불가, Error in Compile time!
             System.out.println(num);
         });
     }
-
 }
 ```
