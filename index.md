@@ -25,6 +25,6 @@
     - [] :: 
 - Personal projects
     - [MSA-email-service :: 이메일 인증 마이크로서비스](./projects/personal/msa-email-service/index)
-    - [Fakebook :: Full feature REST API Server, using SpringBoot](projects/personal/fakebook/index)
+    - [Fakebook :: Full feature REST API Server, using SpringBoot](./projects/personal/fakebook/index)
     - [Papago-cli :: CLI 환경에서 사용하는 파파고 번역기](./projects/personal/papago-cli/index)
 
