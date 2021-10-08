@@ -10,9 +10,10 @@
 > 모든게 올바른 정보라고 장담은 못하지만 적어도 제가 이해한 바로는 이렇습니다.
 
 - [JS와 Java8의 클로저 지원 비교](./posting/JS와_Java8의_클로저_지원_비교)
-- [Node.js는_싱글스레드인가](./posting/Nodejs는_싱글스레드인가)
+- [Node.js는\_싱글스레드인가](./posting/Nodejs는_싱글스레드인가)
 - [Java8의 람다, 함수형 인터페이스](./posting/Java8의_람다_함수형인터페이스)
 - [SpringSecurity 의 Authentication 에 대한 이해](./posting/Spring_Security의_Authentication에_대한_이해)
+- [JPA 사용시 N+1 쿼리 문제](./posting/JPA사용시_N_plus_1_문제)
 
 ## Projects
 
@@ -21,9 +22,8 @@
 > 개인 프로젝트는 프로젝트 전반적인 문제 해결과정을 기록하지만, 회사 직무로서 진행된 프로젝트는 언급이 조심스러운 관계로 부분적인 문제해결에 관해서만 기술합니다.
 
 - Problems in work
-    - [여러요청이 한 리소스에 동시 접근 할 때 :: Messaging Queue를 통한 해결](./projects/work/여러_요청이_한_리소스에_동시_접근_할_때)
+  - [여러요청이 한 리소스에 동시 접근 할 때 :: Messaging Queue를 통한 해결](./projects/work/여러_요청이_한_리소스에_동시_접근_할_때)
 - Personal projects
-    - [MSA-email-service :: 이메일 인증 마이크로서비스](./projects/personal/msa-email-service/index)
-    - [Fakebook :: Full feature REST API Server, using SpringBoot](./projects/personal/fakebook/index)
-    - [Papago-cli :: CLI 환경에서 사용하는 파파고 번역기](./projects/personal/papago-cli/index)
-
+  - [MSA-email-service :: 이메일 인증 마이크로서비스](./projects/personal/msa-email-service/index)
+  - [Fakebook :: Full feature REST API Server, using SpringBoot](./projects/personal/fakebook/index)
+  - [Papago-cli :: CLI 환경에서 사용하는 파파고 번역기](./projects/personal/papago-cli/index)
