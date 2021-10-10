@@ -136,3 +136,7 @@ SecurityContext의 authentication 필드에 인증 완료 상태의 토큰을 �
 ## 5. FilterSecurityInterceptor
 
 인가를 결정하는 AccessDecisionManager 에게 접근 권한이 있는지 확인하고 처리하는 필터.
+
+Spring Security는 configure 하면서 빈으로 등록된 AuthenticationProvider 와 GenericFilterBean 들을 자동으로 로드한다.<br>
+읽어온 AuthenticationProvider 는 Default AuthenticationManager 인 ProviderManager를 초기화 하는데 사용 되고, <br>
+읽어온 GenericFilterBean 은 SecurityFilterChain이 아닌, ServletFilter의 가장 마지막(?) 에 추가한다 <-- 디버깅 해봐야함.
