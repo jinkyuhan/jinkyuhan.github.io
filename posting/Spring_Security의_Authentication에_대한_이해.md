@@ -114,6 +114,7 @@ parsing signiture) 검증하여 성공할 시 인증성공된(Authentication.isA
 아무런 추가 구현을 해주지 않고 Spring Security가 활성화만 된 상태에서는 기본적으로 DaoAuthenticationProvider라는 구현체가 Provider로 사용됩니다. 이 Provider는
 UserDetails와 UserDetailsService라는 인터페이스를 이용해 AuthToken 안의 검증 대상(username, password)과 DB의 데이터를 비교합니다. 우리가 임의의 인증 전략을
 사용한다면, AuthenticationProvider의 구현체를 작성하여 요청에서 뽑아온 정보가 들어있는 AuthToken을 우리만의 방식으로 검증하도록 authenticate 메소드와 support 메소드를 Override하여야 합니다.
+(\* SpringSecurity 는 Security context를 초기화 하는 과정에서 bean 에 등록된 AuthenticationProvider를 모두 ProviderManager(AuthenticationManager)에 등록합니다. 따라서, AuthenticationProvider를 Bean에 등록해주는 것만으로 커스텀 인증 로직을 사용할 수 있습니다.)
 
 SpringSecurity를 만든사람은 이 프레임워크가 어떤 비즈니스에 쓰일지 알 방법이 없었기에 UserDetails과 UserDetailsService라는 일반적인 유저 인터페이스을 만들었을 것입니다.
 FormLogin 방식의 AuthenticationProvider의 구현체인 DaoAuthenticationProvider는 이 UserDetails와 UserDetailsService 인터페이스들을 이용하여
@@ -140,3 +141,5 @@ SecurityContext의 authentication 필드에 인증 완료 상태의 토큰을 �
 Spring Security는 configure 하면서 빈으로 등록된 AuthenticationProvider 와 GenericFilterBean 들을 자동으로 로드한다.<br>
 읽어온 AuthenticationProvider 는 Default AuthenticationManager 인 ProviderManager를 초기화 하는데 사용 되고, <br>
 읽어온 GenericFilterBean 은 SecurityFilterChain이 아닌, ServletFilter의 가장 마지막(?) 에 추가한다 <-- 디버깅 해봐야함.
+
+TODO: 잘못된 정보 거르고 문서 정리해서 새로 작성 할 것.
