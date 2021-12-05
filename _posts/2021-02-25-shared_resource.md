@@ -1,7 +1,10 @@
-<a href="/index">목록 보기</a>
-
-<h1 style="text-align: center; ">여러 요청이 한 리소스에 동시 접근 할 때</h1>
-<p style="text-align: right;"> updated 2020.08 </p>
+---
+layout: post
+title: Shared resource를 동시에 업데이트하기
+date: 2020-09-01
+summary: 두 요청이 동시에 한 리소스를 업데이트 할 때
+categories: study java
+---
 
 # 문제가 무엇이었나요?
 
@@ -120,7 +123,7 @@ function addNewConsumer(queueName, cb) {
 
 # 이런 것을 느꼈어요
 
---- 
+---
 
 &nbsp;서버는 늘 N개의 요청을 상대해야 합니다. 그리고 각 요청이 비동기적으로 돈다는 것은 굉장히 중요하며, 이러한 사실을 완벽이 이해하고 염두에 두어야만 최적화된 프로그래밍을 할 수 있습니다. <br>
 &nbsp;서버를 구성하는 환경마다 이 동시성을 구현한 방법은 많이 다르겠지만, 이를 통해 이후에 같은 실수를 하지 않을 수 있게 되었습니다.<br>
