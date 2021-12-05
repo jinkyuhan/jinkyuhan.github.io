@@ -1,9 +1,9 @@
 ---
 layout: post
 title: NodeJS는 싱글스레드다?
-date: 2020-08-24
+date: 2020-08-22
 summary: 아니 노드는 싱글스레드잖아, 그러면 비동기API는 누가 처리하는거야?
-categories: study
+categories: study node
 ---
 
 ## 내가 이걸 왜 생각하게 됐지를 먼저 생각해 봄
