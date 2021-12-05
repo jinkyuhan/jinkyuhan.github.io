@@ -8,6 +8,7 @@ url: 'https://pixyll.com'
 date_format: '%Y.%m.%d'
 header_pages:
   - about.md
+  - resume.html
   # - contact.html
 
 # Google services
