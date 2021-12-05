@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shared resource를 동시에 업데이트하기
-date: 2020-09-01
+date: 2021-02-05
 summary: 두 요청이 동시에 한 리소스를 업데이트 할 때
 categories: study java
 ---
